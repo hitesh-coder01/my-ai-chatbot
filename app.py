@@ -3,7 +3,8 @@ import google.generativeai as genai
 import time
 
 # 1. SETUP: API Key yahan dhyan se paste karein
-GOOGLE_API_KEY = "AIzaSyCcRTv-Ygi814aUyM8nE_xmfOWq9iV-qEo"
+import streamlit as st
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # 2. MODEL SELECTION: (Aapka working logic)
